@@ -1,94 +1,353 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
+    <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARLUER Jean-Baptiste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        p {
-            margin: 10px 0;
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
         }
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <header>
-            <h1>CARLUER Jean-Baptiste</h1>
-            <p>Université de Montpellier | Montpellier | 34090</p>
-            <p>Téléphone : (+33) 6 79 05 67 32</p>
-            <p>Email : carluer.jean.baptiste@gmail.com</p>
-        </header>
-        <section>
-            <h2>Expérience professionnelle</h2>
-            <p><strong>Ingénieur de recherche dans le cadre d'un projet High Performance Computing pour la
-                    génétique</strong> - CNRS - RTRA Agropolis Fondation - SATT AXLR | Novembre 2019 - Septembre 2020
-            </p>
-            <p>C++, CUDA, PYQT5, GWAS et Gestion big data</p>
-            <p><strong>Développement CUDA d'un algorithme de détection de point-clé SIFT pour images
-                    multidimensionnelles.</strong> - École de technologie supérieure ÉTS | Mars 2019 - Septembre 2019
-            </p>
-            <p>STAGE, C++, GPU, Python</p>
-            <p><strong>Développement d'un micro-site de glyco-biologie.</strong> - UFIP | Mars 2018 - Mai 2018</p>
-            <p>STAGE, Django, Python, BDD</p>
-            <p><strong>Agent Spécialisé</strong> - CNP TECHNOLOGIES DE L INFORMATION | Aout 2017 - Septembre 2017</p>
-            <p><strong>Ouvrier d'exécution niveau 1</strong> - Société Horvais | Juillet 2017 - Aout 2017</p>
-        </section>
-        <section>
-            <h2>Formation</h2>
-            <p><strong>Doctorat</strong> - Université de Montpellier | 2023</p>
-            <p>Encadrant : André MAS et Gabriel KROUK</p>
-            <p>Sujet : Artificial Intelligence to Predict Plant network and Phenotype</p>
-            <p><strong>Master</strong> - UFR Sciences et techniques de Nantes | 2019</p>
-            <p>Bio-Informatique pour les biologistes</p>
-            <p><strong>Licence</strong> - UFR Sciences et techniques d'Orléans | 2017</p>
-            <p>Spécialité Biologie Cellulaire</p>
-            <p><strong>Nom du diplôme</strong> - Nom de l'institution | Date d'obtention</p>
-            <p>Description de votre formation et des réalisations pertinentes.</p>
-        </section>
-        <section>
-            <h2>Compétences</h2>
-            <ul>
-                <li><strong>Modélisation et Visualisation</strong> Pymol, Blender</li>
-                <li><strong>Language Informatique</strong> C++, Python(2 et 3), CUDA, Django, Rstudio, Bash, Java,
-                    PYQT5, git</li>
-                <li><strong>Editeur de Texte</strong> Visual Code Studio, Suite bureautique, Latex</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Langues</h2>
-            <ul>
-                <li>Anglais</li>
-                <li>Espagnol</li>
-            </ul>
-        </section>
+<body class="w3-light-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="images/me.png" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-black">
+                            <h2>Jean-Baptiste Carluer</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Ingeneer in
+                            Bioinformatics</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Montpellier, FR</p>
+                        <p><i
+                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>carluer.jean.baptiste@gmail.com
+                        </p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+33 679056732</p>
+                        <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a
+                                href="https://github.com/CarluerJB">My Github</a></p>
+                        <p><i class="fa fa-book fa-fw w3-margin-right w3-large w3-text-teal"></i><a
+                                href="https://www.researchgate.net/profile/Jean-Baptiste-Carluer">My research</a></p>
+                        <hr>
+
+                        <p class="w3-large"><b><i
+                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                        <p>Computer Science</p>
+                        <p>Artificial Intelligence</p>
+                        <p>Modelisation</p>
+                        <p>Data Science</p>
+                        <p>Cellular biology</p>
+                        <p>Genetics</p>
+                        <br>
+
+                        <p class="w3-large w3-text-theme"><b><i
+                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                        </div>
+                        <p>Spanish</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Research engineer on a High Performance Computing for Genetics
+                                project</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>November 2019 -
+                            September 2020
+                        </h6>
+                        <p>CNRS - Agropolis Fondation - SATT AXLR</p>
+                        <p><span class="w3-tag w3-teal w3-round">C++</span>
+                            <span class="w3-tag w3-teal w3-round">CUDA</span>
+                            <span class="w3-tag w3-teal w3-round">PYQT5</span>
+                            <span class="w3-tag w3-teal w3-round">GWAS</span>
+                            <span class="w3-tag w3-teal w3-round">Big data management</span>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>CUDA development of a SIFT keypoint detection algorithm for
+                                multidimensional images.</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2019 -
+                            September 2019
+                        </h6>
+                        <p>École de technologie supérieure - ÉTS</p>
+                        <p><span class="w3-tag w3-teal w3-round">C++</span>
+                            <span class="w3-tag w3-teal w3-round">Internship</span>
+                            <span class="w3-tag w3-teal w3-round">Python</span>
+                            <span class="w3-tag w3-teal w3-round">GPU</span>
+                            <span class="w3-tag w3-teal w3-round">Computer Vision</span>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Development of a glyco-biology micro-site</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March 2018 - May
+                            2018
+                        </h6>
+                        <p>Protein function and engineering unit - UFIP</p>
+                        <p><span class="w3-tag w3-teal w3-round">Django</span>
+                            <span class="w3-tag w3-teal w3-round">Internship</span>
+                            <span class="w3-tag w3-teal w3-round">Python</span>
+                            <span class="w3-tag w3-teal w3-round">Gestion big data</span>
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Agent Spécialisé</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2017 -
+                            September 2017
+                        </h6>
+                        <p>CNP Technologie de l'information</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Ouvrier d'exécution niveau 1</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Juillet 2017 - Aout
+                            2017
+                        </h6>
+                        <p>Société Horvais</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Montpellier University</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2020 - 2023</h6>
+                        <p>PhD Degree : "Artificial Intelligence to Predict Plant network and Phenotype"</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Nantes University</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2019</h6>
+                        <p>Master Degree : "Bioinformatique pour les biologistes"</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Orléans University</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2017</h6>
+                        <p>Bachelor Degree : "Biologie Moléculaire et Cellulaire"</p><br>
+                    </div>
+                </div>
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Talks &
+                        Presentations</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Cold Spring Harbor Laboratory</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023</h6>
+                        <p><b>Poster - Full epistatic maps retrieve part of missing heritability and improve phenotypic
+                                predictions </b></p>
+                        <p><b>Abstract - </b>
+                            <i>Phenotype prediction has potentially important implications from agronomic
+                                selection to medical applications such as personalized medicine for instance. Being able
+                                to
+                                predict a particular phenotype from genetic data is however dependent on the
+                                identification
+                                of explanatory genetic variants. One of the successful and popular techniques to
+                                identify such variants is Genome Wide Association Study (GWAS). However GWAS signals
+                                quite
+                                often explain a relatively small portion of the phenotypic variance (concept
+                                of missing heritability [h2]).
+                                Here we developed a pipeline of analysis to predict phenotypic values from genetic data.
+                                This work is built upon a new kind of GWAS (called Next Gen GWAS -NGG or
+                                2DGWAS) that provides full epistatic 2D maps [1].
+                                Here we evaluate i) if 2D GWAS signal indeed contains some of the missing heritability,
+                                and
+                                ii) if 2D-GWAS help to predict phenotypic values of plant (Arabidopsis)
+                                nutritional content. To do so we combined, seven machine learning methods : Deep Neural
+                                Network (DNN), Gaussian process, Gradient boosting, Random Forest (RF),
+                                Support Vector Machine (SVM), Linear regression, Lasso and Elastic-net. We show that 2D
+                                signals indeed contain part of the missing heritability and that they can be
+                                used to predict classified phenotype with a maximal f1-score set at 73%. We thus
+                                demonstrate
+                                that indeed important information lies in epistatic signals that bring us a bit
+                                further towards good predictions of very diverse phenotypes.</i>
+                        </p>
+                        <a href="download/Poster_CSHL.pdf">
+                            <img src="download/Poster_CSHL.png" width="20%">
+                        </a>
+                        <hr>
+                    </div>
+                </div>
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Publications
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Full epistatic interaction maps retrieve part of missing heritability
+                                and improve phenotypic prediction</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2022</h6>
+                        <p><b>Abstract - </b>
+                            <i>The first Genome Wide Association Studies (GWAS) shed light on the concept of missing
+                                heritability. It constitutes a mystery with transcending consequences from plant to
+                                human genetics. This mystery lies in the fact that a large proportion of phenotypes are
+                                not explained by unique or simple genomic modifications. One has to invoke genetic
+                                interactions among different loci, also known as epistasis, to partly account for it.
+                                However, current GWAS statistical models are moderately scalable, very sensitive to
+                                False Discovery Rate (FDR) corrections and, even combined with High Performance
+                                Computing (HPC), they can take years to evaluate for a full combinatorial epistatic
+                                space for a single phenotype. Here we propose a modeling approach, named Next-Gen GWAS
+                                (NGG) that evaluates, within hours, >60 billions of single nucleotide polymorphism (SNP)
+                                combinatorial first-order interactions, on a reasonable computer power. We first
+                                benchmark NGG on state of the art GWAS model results, and apply this to Arabidopsis
+                                thaliana providing 2D epistatic maps at gene resolution. We demonstrate on several
+                                phenotypes that a large proportion of the missing heritability can i) be retrieved with
+                                this modeling approach, ii) indeed lies in epistatic interactions and iii) can be used
+                                to improve phenotype prediction.</i>
+                        </p>
+                        <span class="w3-tag w3-blue w3-round"><a
+                                href="https://www.researchgate.net/publication/362182768_Full_epistatic_interaction_maps_retrieve_part_of_missing_heritability_and_improve_phenotypic_prediction">Read</a></span>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>GPU optimization of the 3D Scale-invariant Feature Transform Algorithm
+                                and a Novel BRIEF-inspired 3D Fast Descriptor</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2021</h6>
+                        <p><b>Abstract - </b>
+                            <i>This work details a highly efficient implementation of the 3D scale-invariant feature
+                                transform (SIFT) algorithm, for the purpose of machine learning from large sets of
+                                volumetric medical image data. The primary operations of the 3D SIFT code are
+                                implemented on a graphics processing unit (GPU), including convolution, sub-sampling,
+                                and 4D peak detection from scale-space pyramids. The performance improvements are
+                                quantified in keypoint detection and image-to-image matching experiments, using 3D MRI
+                                human brain volumes of different people. Computationally efficient 3D keypoint
+                                descriptors are proposed based on the Binary Robust Independent Elementary Feature
+                                (BRIEF) code, including a novel descriptor we call Ranked Robust Independent Elementary
+                                Features (RRIEF), and compared to the original 3D SIFT-Rank
+                                method\citep{toews2013efficient}. The GPU implementation affords a speedup of
+                                approximately 7X beyond an optimised CPU implementation, where computation time is
+                                reduced from 1.4 seconds to 0.2 seconds for 3D volumes of size (145, 174, 145) voxels
+                                with approximately 3000 keypoints. Notable speedups include the convolution operation
+                                (20X), 4D peak detection (3X), sub-sampling (3X), and difference-of-Gaussian pyramid
+                                construction (2X). Efficient descriptors offer a speedup of 2X and a memory savings of
+                                6X compared to standard SIFT-Rank descriptors, at a cost of reduced numbers of keypoint
+                                correspondences, revealing a trade-off between computational efficiency and algorithmic
+                                performance. The speedups gained by our implementation will allow for a more efficient
+                                analysis on larger data sets. Our optimized GPU implementation of the 3D SIFT-Rank
+                                extractor is available at https://github.com/CarluerJB/3D_SIFT_CUDA.</i>
+                        </p>
+                        <span class="w3-tag w3-blue w3-round"><a
+                                href="https://www.researchgate.net/publication/357201488_GPU_optimization_of_the_3D_Scale-invariant_Feature_Transform_Algorithm_and_a_Novel_BRIEF-inspired_3D_Fast_Descriptor">Read</a></span>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Large-Scale Unbiased Neuroimage Indexing via 3D GPU-SIFT Filtering and
+                                Keypoint Masking</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2020</h6>
+                        <p><b>Abstract - </b>
+                            <i>We propose a feature extraction method via a novel description and a scalable GPU
+                                implementation (the first to our knowledge) of the 3D scale-invariant feature transform
+                                (SIFT). The feature extraction is first represented as a shallow convolutional neural
+                                network with pre-computed filters, followed by a masked keypoint analysis. We use the
+                                implementation in order to investigate feature extraction for specific instance
+                                identification on natural non-skull-stripped magnetic resonance image (MRI) neuroimaging
+                                data. The proposed implementation is invariant to 3D similarity transforms and aims to
+                                improve robustness by reducing noise and bias for image processing convolution
+                                operations. We show interpretable feature visualizations, which help explain the
+                                obtained results. We demonstrate state-of-the-art results in large-scale neuroimage
+                                family indexing experiments on 3D data from the Human Connectome Project repository, and
+                                show significant speed gains compared to a CPU implementation. The results imply that
+                                using feature extraction using SIFT for neuroimaging analysis can lead to less noisy
+                                results without the need for hard masking during preprocessing. The resulting
+                                interpretable features can help understand brain similarities between family members,
+                                and can also be used on arbitrary image modalities and anatomical structures.</i>
+                        </p>
+                        <span class="w3-tag w3-blue w3-round"><a
+                                href="https://www.researchgate.net/publication/348086474_Large-Scale_Unbiased_Neuroimage_Indexing_via_3D_GPU-SIFT_Filtering_and_Keypoint_Masking">Read</a></span>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Large Scale Indexing of Generic Medical Image Data using Unbiased
+                                Shallow Keypoints and Deep CNN Features</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2020</h6>
+                        <p><b>Abstract - </b>
+                            <i>We propose a unified appearance model accounting for traditional shallow (i.e. 3D SIFT
+                                keypoints) and deep (i.e. CNN output layers) image feature representations, encoding
+                                respectively specific, localized neuroanatomical patterns and rich global information
+                                into a single indexing and classification framework. A novel Bayesian model combines
+                                shallow and deep features based on an assumption of conditional independence and
+                                validated by experiments indexing specific family members and general group categories
+                                in 3D MRI neuroimage data of 1010 subjects from the Human Connectome Project, including
+                                twins and non-twin siblings. A novel domain adaptation strategy is presented,
+                                transforming deep CNN vectors elements into binary class-informative descriptors. A
+                                GPU-based implementation of all processing is provided. State-of-the-art performance is
+                                achieved in large-scale neuroimage indexing, both in terms of computational complexity,
+                                accuracy in identifying family members and sex classification.</i>
+                        </p>
+                        <span class="w3-tag w3-blue w3-round"><a
+                                href="https://www.researchgate.net/publication/344602900_Large_Scale_Indexing_of_Generic_Medical_Image_Data_using_Unbiased_Shallow_Keypoints_and_Deep_CNN_Features">Read</a></span>
+                        <hr>
+                    </div>
+
+                </div>
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>CV</h2>
+                    <div class="w3-container">
+                        <span class="w3-tag w3-blue w3-round"><a href="download/CV.pdf">PDF</a></span>
+                        <hr>
+                    </div>
+                </div>
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
     </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <a href="https://www.facebook.com/thedevilrocker/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/J_B_Carluer"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/jean-baptiste-carluer-95036b162/"><i
+                class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
 </body>
 
 </html>
